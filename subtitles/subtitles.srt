@@ -1,0 +1,1242 @@
+1
+00:00:00,0 --> 00:00:05,0
+rockfall
+
+2
+00:00:00,0 --> 00:00:05,0
+kristian paul bigornia
+dhann angelo guerrero
+calvin klein catalon
+
+3
+00:00:05,200 --> 00:00:06,566
+so hello po
+
+4
+00:00:06,600 --> 00:00:10,766
+dumako naman po tayo sa demo ng ating final game
+
+5
+00:00:10,933 --> 00:00:12,300
+so yun
+
+6
+00:00:12,300 --> 00:00:13,966
+pindutin lang po natin tong play
+
+7
+00:00:15,233 --> 00:00:16,800
+so pagkapindot po natin ng play
+
+8
+00:00:16,800 --> 00:00:18,400
+lalabas po yung ating main screen
+
+9
+00:00:18,400 --> 00:00:20,466
+which is yung rockfall na title
+
+10
+00:00:20,466 --> 00:00:21,900
+then yung new game natin
+
+11
+00:00:22,0 --> 00:00:23,133
+so ayan
+
+12
+00:00:23,266 --> 00:00:28,600
+laruin lang natin ang objective po natin is to destroy ahmm
+
+13
+00:00:30,300 --> 00:00:35,200
+itong mga pinatay pag nadestroy natin is pumuputok sila
+
+14
+00:00:35,200 --> 00:00:36,233
+nasisira sila
+
+15
+00:00:37,300 --> 00:00:41,633
+and they are heading to the space station na kailangan nating iprotect
+
+16
+00:00:42,466 --> 00:00:44,766
+so meron tayong joystick fire button
+
+17
+00:00:50,100 --> 00:00:52,300
+pag binaril natin yung space station natin
+
+18
+00:00:52,300 --> 00:00:53,766
+madadamage natin siya
+
+19
+00:00:54,333 --> 00:00:56,166
+pag nabaril natin tong mga
+
+20
+00:00:58,666 --> 00:01:00,733
+asteroid natin sila'y nasisira
+
+21
+00:01:06,600 --> 00:01:09,133
+ang goal ng game na to is to survive for a minute
+
+22
+00:01:09,333 --> 00:01:12,0
+yung hindi nasisira yung fan natin
+
+23
+00:01:13,133 --> 00:01:14,500
+sira na natin siya
+
+24
+00:01:16,533 --> 00:01:17,766
+parating na naman
+
+25
+00:01:18,333 --> 00:01:19,133
+ay
+
+26
+00:01:21,33 --> 00:01:25,366
+ayan pagka naabutan na tayo nung timer is panalo na tayo
+
+27
+00:01:26,800 --> 00:01:31,100
+so dumako naman tayo sa overview of architecture and main components
+
+28
+00:01:32,0 --> 00:01:34,700
+so kung titignan natin dito
+
+29
+00:01:35,133 --> 00:01:37,300
+eto yung mga architecture natin
+
+30
+00:01:37,300 --> 00:01:39,533
+tsaka main components ng ating game
+
+31
+00:01:39,933 --> 00:01:42,633
+for example dito sa main camera eh
+
+32
+00:01:42,633 --> 00:01:44,800
+dito nakatutok kung saan yung titignan ng camera
+
+33
+00:01:44,800 --> 00:01:47,966
+so nakatutok sya dun sa game natin
+
+34
+00:01:48,933 --> 00:01:51,300
+directional light ito yung mga lighting na
+
+35
+00:01:52,600 --> 00:01:54,300
+tumatagos sa ating game then
+
+36
+00:01:54,300 --> 00:01:56,33
+sa input manager ito yung nag
+
+37
+00:01:57,266 --> 00:02:00,933
+tumitingin ng input natin from the steering joystick
+
+38
+00:02:00,933 --> 00:02:03,533
+or virtual joystick and yung fire rate natin
+
+39
+00:02:03,533 --> 00:02:06,0
+ito yung nagmamanage ng input natin
+
+40
+00:02:06,266 --> 00:02:07,533
+so sa canvas natin
+
+41
+00:02:07,533 --> 00:02:08,333
+ito yan
+
+42
+00:02:09,66 --> 00:02:10,800
+dito nakalagay lahat yung menus natin
+
+43
+00:02:10,800 --> 00:02:12,666
+yung main menu yung pause
+
+44
+00:02:12,666 --> 00:02:14,900
+yung game over natin yung ah
+
+45
+00:02:14,900 --> 00:02:17,66
+in game natin like yung pause button
+
+46
+00:02:17,66 --> 00:02:19,66
+yung ah steering joystick
+
+47
+00:02:19,66 --> 00:02:21,133
+yung fire button natin yung indicator
+
+48
+00:02:21,133 --> 00:02:24,33
+tsaka yung time timer natin sa upper left
+
+49
+00:02:24,233 --> 00:02:25,766
+then sa event system natin
+
+50
+00:02:26,0 --> 00:02:30,200
+ito lang yung parang module natin na ginagamit din ng input manager
+
+51
+00:02:30,200 --> 00:02:33,233
+para malaman yung mga ah input natin sa game
+
+52
+00:02:33,233 --> 00:02:36,400
+like yung joystick natin and the asteroid spawner
+
+53
+00:02:36,400 --> 00:02:38,733
+dito nakalagay kung saan mag ah ah
+
+54
+00:02:39,733 --> 00:02:42,533
+ano to dito mag iispawn yung mga asteroid natin
+
+55
+00:02:42,733 --> 00:02:44,400
+then sa indicator manager
+
+56
+00:02:44,400 --> 00:02:48,800
+dito nilalabas sya yung nagmamanage nung indicators natin
+
+57
+00:02:48,800 --> 00:02:51,466
+for example yung indicator natin sa ah station
+
+58
+00:02:51,466 --> 00:02:54,400
+tsaka sa mga asteroids natin sa game manager
+
+59
+00:02:54,400 --> 00:02:56,0
+ito yung utak ng laro kung saan dito
+
+60
+00:02:56,0 --> 00:02:58,633
+pinagcoconnect connect lahat ng mga scripts
+
+61
+00:02:58,633 --> 00:03:03,333
+ng mga prefabs ng mga objects para gumana yung laro as one
+
+62
+00:03:03,700 --> 00:03:05,366
+then yung ship start point natin
+
+63
+00:03:05,600 --> 00:03:08,500
+dito nagsisimula kung san nag iistart yung ship natin
+
+64
+00:03:08,633 --> 00:03:11,533
+yung space station natin kung san sya nag nakalagay
+
+65
+00:03:11,533 --> 00:03:15,466
+then sa timer natin syempre yung upper left na nagtiticking down
+
+66
+00:03:15,466 --> 00:03:16,700
+yung start time natin is 60
+
+67
+00:03:16,700 --> 00:03:20,600
+pwede nating imove yan then sa boundaries natin is ayan
+
+68
+00:03:21,700 --> 00:03:24,733
+at dito malalaman natin kung saan yung bawal
+
+69
+00:03:24,733 --> 00:03:26,466
+lumabas yung player pag nakalabas siya diyan
+
+70
+00:03:26,466 --> 00:03:28,233
+lalabas yung mga warning natin
+
+71
+00:03:28,233 --> 00:03:30,300
+which is yung red na warning diyan
+
+72
+00:03:30,466 --> 00:03:32,833
+para warningan yung player na nasa ah
+
+73
+00:03:32,833 --> 00:03:34,600
+restrictive space ka na ng laro
+
+74
+00:03:35,600 --> 00:03:40,333
+so magtungo naman tayo dito sa step by step coding highlights natin
+
+75
+00:03:40,666 --> 00:03:45,600
+so first script na ating ginamit dito is yung asteroid script dito
+
+76
+00:03:46,0 --> 00:03:49,633
+ahmm minomodify niya yung bilis yung laki nung asteroid
+
+77
+00:03:49,633 --> 00:03:51,33
+para pag inispawn niya na
+
+78
+00:03:51,266 --> 00:03:54,166
+parang pag inispawn yun yung magiging laki niya at bilis niya
+
+79
+00:03:54,333 --> 00:03:57,200
+so dito naman tayo sa asteroid spawner natin
+
+80
+00:03:58,266 --> 00:04:01,133
+dito naman naka highlight kung ahmm
+
+81
+00:04:01,233 --> 00:04:06,500
+saan ispon yung asteroid kung gaano kalaki kung gaano karami ahmm
+
+82
+00:04:06,500 --> 00:04:07,66
+kung sino
+
+83
+00:04:07,66 --> 00:04:11,133
+yung titirahin nilang nung san papunta yung mga asteroid na yun
+
+84
+00:04:11,266 --> 00:04:13,633
+dito sa script na to naka ah
+
+85
+00:04:14,0 --> 00:04:15,900
+paloob yung script na yun
+
+86
+00:04:16,600 --> 00:04:18,200
+then sa boundary script natin
+
+87
+00:04:19,800 --> 00:04:23,666
+dito nakalagay kung gaano kalaki yung ah
+
+88
+00:04:23,666 --> 00:04:25,200
+ating boundary so
+
+89
+00:04:25,200 --> 00:04:28,433
+for example dito nakalagay lang siya sa 400 f 4
+
+90
+00:04:28,433 --> 00:04:33,33
+50 f para pag nakapunta tayo sa 400f na radius na yun
+
+91
+00:04:33,33 --> 00:04:35,833
+magwawarning siya pero pag nasa 450 na tayo
+
+92
+00:04:35,833 --> 00:04:39,100
+ganun na tayo kalayo is papatayin niya na yung player
+
+93
+00:04:39,400 --> 00:04:41,233
+then sa camera follow parang sa 
+
+94
+00:04:41,233 --> 00:04:44,0
+gnome  well na susundan niya yung character na gusto mong sundan niya
+
+95
+00:04:44,300 --> 00:04:46,700
+susundan niya lang yung ship na nasa likod niya
+
+96
+00:04:46,700 --> 00:04:48,900
+so yun lang yung camera follow natin
+
+97
+00:04:50,133 --> 00:04:51,833
+dun sa damage on collides
+
+98
+00:04:51,833 --> 00:04:54,933
+so anything na nagbunguan is magkakadamage
+
+99
+00:04:54,933 --> 00:04:56,400
+for example nabunggo ko yung ship
+
+100
+00:04:56,400 --> 00:04:58,833
+magkakadamage yung ship tsaka yung ah
+
+101
+00:04:58,833 --> 00:04:59,900
+i mean yung station
+
+102
+00:04:59,900 --> 00:05:02,433
+tsaka yung ship madadamage yung station tsaka yung ship
+
+103
+00:05:02,666 --> 00:05:05,700
+pag nagbunguwan naman yung ship tsaka yung
+
+104
+00:05:07,933 --> 00:05:09,633
+yung asteroid magkakadamage rin yun
+
+105
+00:05:09,633 --> 00:05:10,866
+so masisira niya yung asteroid
+
+106
+00:05:10,866 --> 00:05:12,833
+masisira mo rin yung ship mo
+
+107
+00:05:13,133 --> 00:05:14,833
+so yun lang yung damage on the ride natin
+
+108
+00:05:14,833 --> 00:05:17,733
+may damage siya lahat then damage taking
+
+109
+00:05:17,733 --> 00:05:21,0
+syempre ito yung parang hit points ng mga tao kung ilang damage
+
+110
+00:05:21,0 --> 00:05:24,100
+yung gusto mong ibigay sa mga ah object sa game
+
+111
+00:05:24,100 --> 00:05:24,666
+for example
+
+112
+00:05:24,666 --> 00:05:27,900
+kung ilan yung kayang asteroids na pwedeng matamaan nung mga ay
+
+113
+00:05:28,400 --> 00:05:32,300
+asteroids yung kayang tamaan nung ah station natin
+
+114
+00:05:32,300 --> 00:05:34,900
+kung ilang asteroids yung kayang bungguin nung ship natin
+
+115
+00:05:34,900 --> 00:05:38,900
+kung ilang laser yung kayang tangkihin nung station natin
+
+116
+00:05:39,700 --> 00:05:43,333
+sa game manager dito natin pinagcoconnect connect lahat ah
+
+117
+00:05:43,333 --> 00:05:45,400
+for example yung ship prefab natin
+
+118
+00:05:45,533 --> 00:05:47,700
+ginagamit niyang ship prefab para kung saan man
+
+119
+00:05:47,700 --> 00:05:49,866
+gusto nating iposisyon yung ship start natin
+
+120
+00:05:49,866 --> 00:05:51,566
+gagamitin yung ship prefab natin
+
+121
+00:05:51,700 --> 00:05:53,466
+so ito yung parang pinaka utak nung laro
+
+122
+00:05:53,466 --> 00:05:55,400
+kung saan dito natin pinagcoconnect connect lahat
+
+123
+00:05:55,400 --> 00:05:59,200
+at ginagamit para magstart ng maayos yung laro
+
+124
+00:05:59,200 --> 00:06:01,100
+kung ano man yung gusto nating iset dito
+
+125
+00:06:02,133 --> 00:06:04,0
+so dito naman sa indicator natin
+
+126
+00:06:04,300 --> 00:06:07,166
+ito iniispone niya yung ah
+
+127
+00:06:07,500 --> 00:06:09,533
+ginagawa niya ng indicator yung mga objects
+
+128
+00:06:09,533 --> 00:06:10,600
+for example yung station
+
+129
+00:06:10,600 --> 00:06:12,100
+nilalagyan niya ng kulay green
+
+130
+00:06:12,266 --> 00:06:13,466
+yung ating asteroids
+
+131
+00:06:13,466 --> 00:06:16,500
+nilalagyan niya ng kulay red indicator para malaman ng player
+
+132
+00:06:16,500 --> 00:06:18,233
+kung ano yung kailangan niyang sirain
+
+133
+00:06:18,300 --> 00:06:20,166
+then dito sa indicator manager
+
+134
+00:06:20,433 --> 00:06:22,800
+manager siya naman yung nagmamanege kung kanino niya
+
+135
+00:06:22,800 --> 00:06:24,233
+ibibigay yung mga indicator na yun
+
+136
+00:06:24,233 --> 00:06:26,66
+so kung mga asteroids
+
+137
+00:06:26,66 --> 00:06:28,733
+syempre maraming asteroids yung gagawan niya then pag pag
+
+138
+00:06:30,833 --> 00:06:33,533
+naman station syempre maraming station yung gagawan niya
+
+139
+00:06:35,100 --> 00:06:37,0
+dito naman sa input manager natin
+
+140
+00:06:38,266 --> 00:06:41,900
+syempre sya lang din naman yung nagmamanage kung paano iliko yung ship
+
+141
+00:06:41,900 --> 00:06:44,600
+kung paano gumagana yung fire button
+
+142
+00:06:44,600 --> 00:06:45,700
+yung pause button natin so
+
+143
+00:06:45,700 --> 00:06:47,366
+any input na nakukuha nung
+
+144
+00:06:49,33 --> 00:06:54,366
+ang mga buttons natin is dito dumadaan para magamit nung ah unity
+
+145
+00:06:54,466 --> 00:06:55,600
+then sa ship steering
+
+146
+00:06:55,600 --> 00:06:57,600
+ito naman yung ginagamit ng input manager natin
+
+147
+00:06:57,600 --> 00:07:00,933
+para lumiko yung ship pa so
+
+148
+00:07:02,466 --> 00:07:04,933
+ginagamit niya yung input from the virtual joystick
+
+149
+00:07:04,933 --> 00:07:09,100
+yung thumb na object natin ito para malaman kung saan
+
+150
+00:07:09,100 --> 00:07:13,300
+liliko yung ating ship then sa ship target
+
+151
+00:07:14,900 --> 00:07:17,433
+so ito lang naman ginagamit natin to dun sa target
+
+152
+00:07:17,433 --> 00:07:20,200
+reticle natin iispawn niya yung ahmm
+
+153
+00:07:20,600 --> 00:07:25,100
+parang pang aim natin pang baril natin ng ah laser
+
+154
+00:07:25,133 --> 00:07:26,100
+then sa ship thrust
+
+155
+00:07:26,100 --> 00:07:28,500
+ito kung gaano kabilis yung ah
+
+156
+00:07:28,500 --> 00:07:32,400
+paglipad nung ating ship then sa ship weapons dito naman
+
+157
+00:07:33,700 --> 00:07:38,100
+ginagamit niya yung shot na script natin para ma ispawn niya
+
+158
+00:07:38,100 --> 00:07:40,200
+yung mga baril na ginagamit natin
+
+159
+00:07:40,200 --> 00:07:41,266
+so dito naman sa shot
+
+160
+00:07:41,266 --> 00:07:43,433
+ito naman yung individual na naiispawn
+
+161
+00:07:43,433 --> 00:07:45,633
+kung gaano siya kabilis kung gaano
+
+162
+00:07:45,633 --> 00:07:47,133
+kalakas yung damage niya ganun
+
+163
+00:07:49,0 --> 00:07:52,733
+tong single tone naman parang single instance lang to ng isang bagay
+
+164
+00:07:52,933 --> 00:07:54,433
+ahmm for example
+
+165
+00:07:54,433 --> 00:07:55,233
+ahmm
+
+166
+00:07:55,466 --> 00:07:59,266
+ginamit to dun sa input natin para pag nagkaroon siya ng instance
+
+167
+00:07:59,266 --> 00:08:02,833
+ayan magagamit siya nung mga ah event system ganun
+
+168
+00:08:03,433 --> 00:08:04,700
+then sa smooth follow natin
+
+169
+00:08:04,700 --> 00:08:08,100
+ginagamit niya yung camera follow natin para yun nga
+
+170
+00:08:08,100 --> 00:08:09,533
+sabi sa pangalan smooth follow
+
+171
+00:08:09,533 --> 00:08:10,800
+maismooth niya pa yung pangalan
+
+172
+00:08:10,800 --> 00:08:13,0
+kasi nung una naming pag ah gawa
+
+173
+00:08:13,0 --> 00:08:15,466
+neto is kapangit yung pagka follow niya
+
+174
+00:08:15,466 --> 00:08:18,800
+dun sa ship natin then sa space station
+
+175
+00:08:18,833 --> 00:08:21,633
+syempre para ispawn niya yung space station natin
+
+176
+00:08:21,633 --> 00:08:22,466
+kung saan man natin gustong
+
+177
+00:08:22,466 --> 00:08:24,700
+ilagay yung timer natin ito to
+
+178
+00:08:24,700 --> 00:08:26,33
+ginagamit natin kung gaano
+
+179
+00:08:26,33 --> 00:08:29,633
+kabilis yung time pag naubos na at buhay pa yung station natin
+
+180
+00:08:29,633 --> 00:08:33,533
+panalo ka may game over pag for example naman
+
+181
+00:08:33,700 --> 00:08:36,200
+meron pa ring time na tas namatay istop niya yung time
+
+182
+00:08:36,200 --> 00:08:37,633
+syempre maggegame over ka pa rin
+
+183
+00:08:38,66 --> 00:08:40,400
+at ito yung pinakamahirap na script sa lahat
+
+184
+00:08:40,400 --> 00:08:41,633
+which is yung virtual joystick
+
+185
+00:08:41,633 --> 00:08:42,800
+which is ah
+
+186
+00:08:42,800 --> 00:08:45,533
+parang mathematician yung gumawa neto ahmm
+
+187
+00:08:45,633 --> 00:08:49,300
+inisip niya is ang ginawa natin dito is
+
+188
+00:08:50,733 --> 00:08:54,633
+ahmm icoconvert natin yung position nung ito
+
+189
+00:08:54,633 --> 00:08:56,366
+tong thumb natin sa joystick natin
+
+190
+00:08:56,633 --> 00:08:58,233
+para iconvert niya kung saan
+
+191
+00:08:58,466 --> 00:09:02,833
+pupunta yung ship natin which is maraming math na mahirap maintindihan
+
+192
+00:09:02,833 --> 00:09:07,233
+so yun lang naman yung simple and lahat ng scripts dito sa game na to
+
+193
+00:09:08,933 --> 00:09:13,433
+so magtungo naman tayo ngayon sa assets and folder structure natin
+
+194
+00:09:13,800 --> 00:09:15,933
+so pagkapunta natin dito sa assets
+
+195
+00:09:15,933 --> 00:09:18,700
+makikita natin lahat ng folders na nagamit natin
+
+196
+00:09:18,933 --> 00:09:20,533
+so let's go to the first folder
+
+197
+00:09:20,533 --> 00:09:23,666
+which is the um audio folder natin
+
+198
+00:09:23,933 --> 00:09:26,266
+dito na makikita natin yung mga nagamit nating audio
+
+199
+00:09:26,266 --> 00:09:29,100
+for example tong engine audio
+
+200
+00:09:29,100 --> 00:09:31,366
+kung kung papang lumilipad ganun
+
+201
+00:09:31,866 --> 00:09:35,66
+hintayin natin yan pag lumilipad yung ship natin
+
+202
+00:09:35,66 --> 00:09:36,733
+nakaloop yan then explosion
+
+203
+00:09:36,733 --> 00:09:40,233
+pag pumutok yan yung laser natin yung tunog ng baril
+
+204
+00:09:42,800 --> 00:09:46,700
+then sa fans ito yung ginamit natin para dun sa mga ui natin
+
+205
+00:09:46,700 --> 00:09:47,700
+ito game over
+
+206
+00:09:47,700 --> 00:09:49,200
+yung start yung mga new game
+
+207
+00:09:49,200 --> 00:09:52,33
+fire pause timer yung mga font   na ginamit natin
+
+208
+00:09:52,966 --> 00:09:55,33
+then sa main yung mga lighting natin to
+
+209
+00:09:55,566 --> 00:09:57,566
+then sa models ito yung mga ginamit nating
+
+210
+00:09:57,566 --> 00:10:00,466
+nilagay natin sa mga objects natin para magamit
+
+211
+00:10:00,466 --> 00:10:01,600
+so in quan
+
+212
+00:10:01,600 --> 00:10:02,500
+to in reality
+
+213
+00:10:02,566 --> 00:10:04,66
+blender objects tong mga to
+
+214
+00:10:04,66 --> 00:10:05,500
+since kailangan mong install yung blender
+
+215
+00:10:05,500 --> 00:10:11,500
+para magamit tong laro para ma maimport nya tong mga to is
+
+216
+00:10:11,500 --> 00:10:14,0
+ayun ito yung mga models na ginamit natin
+
+217
+00:10:14,333 --> 00:10:16,100
+then sa objects natin
+
+218
+00:10:16,100 --> 00:10:18,100
+meron tayong mga asteroid explosion
+
+219
+00:10:18,100 --> 00:10:19,366
+laser explosion
+
+220
+00:10:19,966 --> 00:10:21,600
+ah position indicator ship
+
+221
+00:10:21,600 --> 00:10:24,166
+ito inimport natin yung model
+
+222
+00:10:24,166 --> 00:10:27,200
+dito yung shot yung space station
+
+223
+00:10:27,200 --> 00:10:30,0
+tsaka yung trail then sa particles naman natin
+
+224
+00:10:30,0 --> 00:10:32,766
+dito pag pumutok yung ahmm
+
+225
+00:10:33,300 --> 00:10:34,600
+ano to asteroid ayun
+
+226
+00:10:34,600 --> 00:10:37,600
+maglalabas siya ng dust sa scripts natin
+
+227
+00:10:37,600 --> 00:10:39,166
+syempre yung mga scripts natin
+
+228
+00:10:39,466 --> 00:10:40,966
+skybox natin dito naman
+
+229
+00:10:41,100 --> 00:10:41,900
+dito natin
+
+230
+00:10:42,566 --> 00:10:45,900
+ginamit natin tong mga to para magawa natin tong space na ganito
+
+231
+00:10:47,400 --> 00:10:49,700
+then sa ui natin syempre ah
+
+232
+00:10:49,800 --> 00:10:51,466
+meron tayong button ayan
+
+233
+00:10:51,466 --> 00:10:55,600
+ito yung indicator kapag lalabas na dun sa mga bagay
+
+234
+00:10:55,600 --> 00:10:56,866
+dun sa mundo for example
+
+235
+00:10:56,866 --> 00:10:58,700
+yung station tsaka yung asteroid
+
+236
+00:10:59,66 --> 00:11:00,0
+yung pad natin dito
+
+237
+00:11:00,0 --> 00:11:03,900
+nilalagay yung thumb para ma record natin yung ahmm
+
+238
+00:11:04,300 --> 00:11:06,566
+steering nung ship tsaka yung target
+
+239
+00:11:06,566 --> 00:11:09,733
+reticle natin para para dun sa pag aim natin
+
+240
+00:11:09,733 --> 00:11:12,600
+tsaka yung pag warning para sa boundary
+
+241
+00:11:14,400 --> 00:11:15,433
+so ngayon naman
+
+242
+00:11:15,766 --> 00:11:19,866
+i'm gonna teach you how to run and test the game
+
+243
+00:11:19,866 --> 00:11:20,700
+so pagka in
+
+244
+00:11:20,700 --> 00:11:23,333
+pagka download natin ng zip natin na release
+
+245
+00:11:23,333 --> 00:11:27,400
+that zip is dito naman natin pupunta sa unity hub ahmm
+
+246
+00:11:27,400 --> 00:11:29,800
+pagka unzip natin punta tayo dito sa unity hub
+
+247
+00:11:29,800 --> 00:11:31,566
+at pindutin natin tong add
+
+248
+00:11:31,733 --> 00:11:32,866
+pagka pinindot natin tong add
+
+249
+00:11:32,866 --> 00:11:34,566
+punta tayo sa add project from jace
+
+250
+00:11:34,566 --> 00:11:38,0
+hanapin natin kung san nakalagay yung folder na na pinag ah
+
+251
+00:11:38,66 --> 00:11:39,266
+unzipan natin which is
+
+252
+00:11:39,266 --> 00:11:40,600
+ito sakin rockfall
+
+253
+00:11:40,600 --> 00:11:42,200
+tas hanapin niyo tong tatlong to
+
+254
+00:11:42,500 --> 00:11:45,166
+syempre yung folder na ginamit natin which is yung rockfall
+
+255
+00:11:45,166 --> 00:11:46,366
+yung pipindutin natin so
+
+256
+00:11:46,366 --> 00:11:47,900
+pagka open natin ayan
+
+257
+00:11:47,966 --> 00:11:48,966
+pupunta siya dito
+
+258
+00:11:50,133 --> 00:11:53,333
+pagkapunta niya dito pindutin lang natin tong editor version natin
+
+259
+00:11:53,333 --> 00:11:55,466
+kahit anong editor version is pwede nating gamitin
+
+260
+00:11:55,466 --> 00:11:56,800
+basta ah
+
+261
+00:11:56,866 --> 00:11:58,700
+nasa malapit lang siya sa latest
+
+262
+00:11:58,766 --> 00:12:02,266
+so ito pindutin natin tong current platform at ilagay natin sa android
+
+263
+00:12:02,266 --> 00:12:04,0
+then pindutin natin tong open
+
+264
+00:12:04,566 --> 00:12:06,466
+so note kailangan natin
+
+265
+00:12:06,600 --> 00:12:08,400
+first naka install yung blender
+
+266
+00:12:08,400 --> 00:12:09,800
+bago natin sya iimport
+
+267
+00:12:10,133 --> 00:12:13,133
+kasi para mag hindi na natin kailangang ireimport yung mga kwan
+
+268
+00:12:13,133 --> 00:12:15,566
+pag ah hindi pa na import yung mga model
+
+269
+00:12:15,566 --> 00:12:17,133
+which is kailangan ng blender
+
+270
+00:12:17,133 --> 00:12:18,266
+kahit install nyo lang yung blender
+
+271
+00:12:18,266 --> 00:12:21,966
+kahit di nyo na iopen para lang ma import natin yung mga models
+
+272
+00:12:23,66 --> 00:12:24,33
+so ayun
+
+273
+00:12:24,166 --> 00:12:26,766
+pagkaload ng pagkaload ng game natin
+
+274
+00:12:26,766 --> 00:12:29,900
+punta na tayo dito sa assets at pindutin natin tong main
+
+275
+00:12:29,900 --> 00:12:31,700
+ito yung scene ng main game natin
+
+276
+00:12:31,700 --> 00:12:33,100
+then punta lang tayo dito sa game
+
+277
+00:12:33,100 --> 00:12:38,33
+at pindutin natin yung play para magstart na yung game ayun lang siya
+
+278
+00:12:41,500 --> 00:12:45,133
+so magtungo naman tayo sa known issues and possible improvements
+
+279
+00:12:45,533 --> 00:12:49,733
+so first and foremost yung issue natin is no save or load feature
+
+280
+00:12:49,733 --> 00:12:52,366
+kasi kailangan natin ng alam ko database
+
+281
+00:12:52,366 --> 00:12:53,800
+para masave natin yung state na yun
+
+282
+00:12:53,800 --> 00:12:56,233
+at mareload natin yung state na yun
+
+283
+00:12:56,433 --> 00:13:00,233
+second would be the asteroid collisions na for example
+
+284
+00:13:00,233 --> 00:13:01,600
+nagbubukol yung mga asteroid
+
+285
+00:13:01,600 --> 00:13:04,900
+ayun nag ooverlap yung itsura nila kaya pangit tignan
+
+286
+00:13:05,166 --> 00:13:09,433
+then would be the touch joystick sensitivity sa ibang devices
+
+287
+00:13:09,433 --> 00:13:11,566
+for example yung na encounter
+
+288
+00:13:11,566 --> 00:13:17,633
+naming bug or issue is nung pagka pagkatapos naming matry sa pc
+
+289
+00:13:17,633 --> 00:13:20,266
+gumagana lahat at inimport na namin siya sa apk
+
+290
+00:13:20,500 --> 00:13:22,433
+pag nakahiga yung phone nawawala
+
+291
+00:13:22,433 --> 00:13:24,100
+bigla yung joystick pagkapindot mo
+
+292
+00:13:24,366 --> 00:13:25,833
+pero pag nakatayo goods lang naman siya
+
+293
+00:13:25,833 --> 00:13:27,433
+kaya inayos na rin namin yun
+
+294
+00:13:27,566 --> 00:13:31,333
+then an improvement that we can do is maglagay ng background music
+
+295
+00:13:31,333 --> 00:13:34,366
+and yun nga yung save load feature na mahirap gawin
+
+296
+00:13:34,366 --> 00:13:36,466
+kasi mag integrate ka pa ng ahmm
+
+297
+00:13:36,633 --> 00:13:38,433
+pang save nung state na yun
+
+298
+00:13:41,133 --> 00:13:43,100
+so that's all for this video
+
+299
+00:13:43,100 --> 00:13:45,100
+salamat sa pakikinig ah
+
+300
+00:13:45,100 --> 00:13:47,200
+for our closing credits ah
+
+301
+00:13:47,200 --> 00:13:51,300
+i am kristian paul bigonia together with my teammates ah
+
+302
+00:13:51,366 --> 00:13:52,0
+dan angelo
+
+303
+00:13:52,0 --> 00:13:56,633
+guerrero and ah calvin klein catalon na gumawa ng project na to
+
+304
+00:13:56,633 --> 00:13:58,200
+especially sa documentation
+
+305
+00:13:58,200 --> 00:13:59,866
+which is yung step by step natin
+
+306
+00:14:00,100 --> 00:14:02,900
+and yun lang naman
+
+307
+00:14:03,633 --> 00:14:05,500
+thank you for watching this video
+
+308
+00:14:05,500 --> 00:14:06,933
+ang link ng ating github repo
+
+309
+00:14:06,933 --> 00:14:09,566
+ipopost ko sa credit ending credits natin
+
+310
+00:14:09,566 --> 00:14:11,733
+and thank you for listening god bless
+
